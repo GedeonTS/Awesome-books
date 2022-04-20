@@ -47,7 +47,7 @@ function ATLoad() {
 
     for (let i = 0; i < arr.length; i += 1) {
 
-        bookList.innerHTML += `<p>${arr[i].title}</p><br><p>${arr[i].author}</p><button id='${i}'>Remove</button><hr>`;
+        bookList.innerHTML += `<p>${arr[i].title} by ${arr[i].author}</p><button id='${i}'>Remove</button><hr>`;
     }
 
     const allbtns = document.querySelectorAll('#list button');

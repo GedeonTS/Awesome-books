@@ -1,3 +1,12 @@
-*{
-    background: none;
+ *{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 30px;
 }
