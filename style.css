@@ -1,4 +1,4 @@
- *{
+* {
   margin: 0;
   padding: 0;
 }
@@ -7,6 +7,45 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
-  padding: 30px;
+  margin-top: 5%;
+  font-family: 'Patrick Hand', cursive;
+  align-items: center;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+form {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookWrapper {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px gray;
+  padding: 5px;
+  margin: 5px;
+}
+
+.bookDetails {
+  width: 90%;
+  text-align: left;
+}
+
+hr {
+  width: 50px;
+  height: 2px;
+  background-color: gray;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+#btn {
+  width: 20%;
+  margin-left: 80%;
 }
