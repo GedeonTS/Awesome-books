@@ -27,6 +27,20 @@ class BookStore {
       location.reload();
     }
   }
+
+  removeBook() {
+    let arr = JSON.parse(localStorage.getItem('localData'));
+    const allbtns = document.querySelectorAll('#list button');
+
+    allbtns.forEach((a, i) => {
+      a.addEventListener('click', () => {
+        arr = arr.filter((object) => arr.indexOf(object) !== i);
+        localStorage.setItem('localData', JSON.stringify(arr));
+
+        location.reload();
+      });
+    });
+  }
 }
 
 form.addEventListener('submit', (e) => {
@@ -35,9 +49,8 @@ form.addEventListener('submit', (e) => {
   books.addBook();
 });
 
-let arr = JSON.parse(localStorage.getItem('localData'));
-
 function ATLoad() {
+  const arr = JSON.parse(localStorage.getItem('localData'));
   for (let i = 0; i < arr.length; i += 1) {
     if (arr[i].title !== '' || arr[i].author !== '') {
       bookList.innerHTML += `<div class='bookWrapper'><p class='bookDetails'>${arr[i].title} by ${arr[i].author}</p><button id='${i}'>Remove</button></div>`;
@@ -46,16 +59,8 @@ function ATLoad() {
     }
   }
 
-  const allbtns = document.querySelectorAll('#list button');
-
-  allbtns.forEach((a, i) => {
-    a.addEventListener('click', () => {
-      arr = arr.filter((object) => arr.indexOf(object) !== i);
-      localStorage.setItem('localData', JSON.stringify(arr));
-
-      location.reload();
-    });
-  });
+  const bookR = new BookStore();
+  bookR.removeBook();
 }
 
 window.addEventListener('load', ATLoad);
