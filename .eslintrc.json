@@ -11,6 +11,7 @@
     },
     "extends": ["airbnb-base"],
     "rules": {
+      "no-inner-declarations":"off",
       "class-methods-use-this":"off",
       "no-restricted-globals": "off",
       "no-shadow": "off",

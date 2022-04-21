@@ -7,29 +7,33 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
-  font-family: 'Patrick Hand', cursive;
+  margin-top: 0.5%;
+  font-family: "Patrick Hand", cursive;
   align-items: center;
+  overflow-y: hidden;
 }
 
 #list {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 94%;
+  border-top: solid;
 }
 
 form {
-  width: 20%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-items: center;
 }
 
 .bookWrapper {
   display: flex;
   flex-direction: row;
-  border: solid 1px gray;
   padding: 5px;
-  margin: 5px;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
 }
 
 .bookDetails {
@@ -48,4 +52,140 @@ hr {
 #btn {
   width: 20%;
   margin-left: 80%;
+}
+
+#one {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+  border: solid 2px black;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+.nav-item {
+  padding-left: 10%;
+}
+
+.itemv {
+  color: black;
+  text-decoration: none;
+  border-right: solid 2px black;
+  padding-right: 20px;
+}
+
+.nav-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: blue;
+}
+
+.grey {
+  background-color: rgba(173, 169, 169, 0.795);
+}
+
+.white {
+  background-color: #fff;
+}
+
+.date {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: end;
+}
+
+footer {
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin-top: 87vh;
+  padding: 1%;
+  border: solid 2px black;
+}
+
+.first {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second {
+  width: 94%;
+}
+
+.listwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.input-area {
+  width: 70%;
+  align-self: center;
+  height: 80vh;
+}
+
+.input-title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.input-area input {
+  width: 100%;
+  height: 5%;
+  border: solid;
+  margin-bottom: 3%;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.last {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ul-contact {
+  width: 230px;
+  text-align: left;
+  margin-top: 1%;
+  align-self: center;
+}
+
+.last h2 {
+  margin: 3%;
+}
+
+.des {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
 }
