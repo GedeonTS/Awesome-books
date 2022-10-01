@@ -91,36 +91,21 @@ const menu2 = document.querySelector('.menu2');
 const menu3 = document.querySelector('.menu3');
 
 function firstOnly() {
-  firstSection.classList.add('show');
-  firstSection.classList.remove('hide');
-
-  secondSection.classList.add('hide');
-  secondSection.classList.remove('show');
-
-  lastSection.classList.add('hide');
-  lastSection.classList.remove('show');
+  firstSection.style.display = 'flex';
+  secondSection.style.display = 'none';
+  lastSection.style.display = 'none';
 }
 
 function secondOnly() {
-  firstSection.classList.add('hide');
-  firstSection.classList.remove('show');
-
-  secondSection.classList.add('show');
-  secondSection.classList.remove('hide');
-
-  lastSection.classList.add('hide');
-  lastSection.classList.remove('show');
+  firstSection.style.display = 'none';
+  secondSection.style.display = 'flex';
+  lastSection.style.display = 'none';
 }
 
 function lasttOnly() {
-  firstSection.classList.add('hide');
-  firstSection.classList.remove('show');
-
-  secondSection.classList.add('hide');
-  secondSection.classList.remove('show');
-
-  lastSection.classList.add('show');
-  lastSection.classList.remove('hide');
+  firstSection.style.display = 'none';
+  secondSection.style.display = 'none';
+  lastSection.style.display = 'flex';
 }
 
 menu1.addEventListener('click', firstOnly);
