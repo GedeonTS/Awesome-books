@@ -168,7 +168,6 @@ footer {
 
 .last {
   width: 94%;
-  display: flex;
   flex-direction: column;
 }
 
