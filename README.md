@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome-book-entries
+# Awesome-books
 
 ## Live Demo
 
